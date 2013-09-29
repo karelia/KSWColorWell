@@ -1,0 +1,47 @@
+Features
+========
+
+Provides a simple view for drawing a single swatch of colour.
+
+There are many other color well/swatch implementations available, but all that I've come across are bundled as part of a color picker, or other broader component. This one is deliberately isolated.
+
+Drawing is implemented entirely using a `CGShapeLayer`, which should allow Core Image to render more efficiently than when using `-drawRect:` or similar.
+
+`KSWColorWell` will display correctly as part of a `UITableViewCell`, taking on the requested background color as appropriate.
+
+Contact
+=======
+
+I'm Mike Abdullah, of [Karelia Software](http://karelia.com). [@mikeabdullah](http://twitter.com/mikeabdullah) on Twitter.
+
+Questions about the code should be left as issues at https://github.com/karelia/KSError or message me on Twitter. I'm interested in any customisation features people may be after.
+
+Dependencies
+============
+
+None beyond UIKit.
+
+Requires iOS 7, but only for the `CGPathCreateWithRoundedRect` function. It could be easily replaced with something compatible back to iOS 2 if desired.
+
+Licensing
+=========
+
+Copyright © 2013 Karelia Software
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
