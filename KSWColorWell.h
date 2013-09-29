@@ -9,6 +9,14 @@
 
 @interface KSWColorWell : UIView
 
+/**
+ The color to display.
+ 
+ If `nil`, the receiver performs no drawing of its own (i.e. it's invisible
+ unless you provide a background color or similar).
+ 
+ Defaults to `nil`.
+ */
 @property(nonatomic, copy) UIColor *color;
 
 @end
